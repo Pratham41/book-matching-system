@@ -15,7 +15,7 @@ const Home = () => {
     const getAllBooks = async () => {
       try {
         const { data } = await axios.get(
-          `http://localhost:5000/api/v1/book?genre=${genre}&&author=${author}`
+          `https://booksystem.onrender.com/api/v1/book?genre=${genre}&&author=${author}`
         );
         setAllBooks(data.data);
         setLoading(false);
